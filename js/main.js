@@ -96,30 +96,10 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', updateScrollProgress);
 
     // ============================================
-    // 5. FADE-IN ON SCROLL ANIMATION
+    // 5. FADE-IN ON SCROLL ANIMATION (DISABLED)
     // ============================================
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    // Observe all sections for fade-in effect
-    const sectionsToAnimate = document.querySelectorAll('section');
-    sectionsToAnimate.forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(30px)';
-        section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(section);
-    });
+    // Animation disabled to prevent content from disappearing on page load
+    // Content is now always visible for better user experience
 
     // ============================================
     // 6. NAVBAR BACKGROUND ON SCROLL
@@ -137,28 +117,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', updateNavbarBackground);
 
     // ============================================
-    // 7. PROJECT CARDS STAGGER ANIMATION
+    // 7. PROJECT CARDS STAGGER ANIMATION (DISABLED)
     // ============================================
-    const projectCards = document.querySelectorAll('.project-card');
-
-    const cardObserver = new IntersectionObserver(function (entries) {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                setTimeout(() => {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }, index * 100); // Stagger delay
-                cardObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    projectCards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
-        cardObserver.observe(card);
-    });
+    // Animation disabled to prevent cards from being hidden on page load
 
     // ============================================
     // 8. TYPING EFFECT FOR HERO SUBTITLE (Optional)
