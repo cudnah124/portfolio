@@ -82,6 +82,38 @@
             backdrop-filter: blur(12px);
             background-color: rgba(255, 255, 255, 0.9);
         }
+
+        /* Scrollable container */
+        .scrollable-container {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 8px;
+        }
+
+        /* Custom scrollbar styling */
+        .scrollable-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .scrollable-container::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+
+        .scrollable-container::-webkit-scrollbar-thumb {
+            background: #1e3a8a;
+            border-radius: 10px;
+        }
+
+        .scrollable-container::-webkit-scrollbar-thumb:hover {
+            background: #0f172a;
+        }
+
+        /* Firefox scrollbar */
+        .scrollable-container {
+            scrollbar-width: thin;
+            scrollbar-color: #1e3a8a #f1f5f9;
+        }
     </style>
 </head>
 
@@ -142,8 +174,8 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-[1fr_300px] gap-8">
 
-                <!-- Left Column - Study Cards -->
-                <div class="space-y-6" id="study-cards-container">
+                <!-- Left Column - Study Cards (Scrollable Container) -->
+                <div class="scrollable-container space-y-6" id="study-cards-container">
 
                     <!-- YouTube Video Card 1 -->
                     <div class="study-card bg-white rounded-xl p-6 border border-gray-100 shadow-sm" data-type="youtube"
