@@ -1,25 +1,38 @@
-name: Deploy to GitHub Pages
+name: Deploy Portfolio
 
 on:
   push:
-    branches: ["main"] # Chạy khi bạn push code lên nhánh main
+    branches: ["main"]
+  workflow_dispatch: # Cho phép bấm chạy thủ công nếu cần
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true # Tự động hủy lượt chạy cũ nếu bạn push liên tục
+
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps:deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Đường dẫn đến thư mục chứa file index.html
+          # Đảm bảo đường dẫn này trỏ đúng đến nơi chứa file index.html của bạn
+          path: '.' 
+
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
