@@ -168,280 +168,67 @@
 
 
                 <div class="scrollable-container space-y-6" id="study-cards-container">
-
-
-                    <div class="study-card bg-white rounded-xl p-6 border border-gray-100 shadow-sm" data-type="youtube"
-                        data-tags="ai,deep-learning,transformers">
-                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
-                            <span>Jan 15, 2025</span>
-                            <span>•</span>
-                            <i data-lucide="clock" class="w-4 h-4"></i>
-                            <span>45 min watch</span>
-                        </div>
-
-                        <div class="flex items-start gap-3 mb-3">
-                            <i data-lucide="youtube" class="w-6 h-6 text-red-600 flex-shrink-0 mt-1"></i>
-                            <h3 class="text-xl font-bold text-gray-900">Attention Is All You Need Explained</h3>
-                        </div>
-
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            Deep dive into the Transformer architecture that revolutionized NLP. Covers self-attention
-                            mechanism,
-                            multi-head attention, positional encoding, and why transformers outperform RNNs.
-                        </p>
-
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-xs">AI</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Deep Learning</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Transformers</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">YouTube</span>
-                        </div>
-
-                        <a href="https://youtube.com" target="_blank"
-                            class="inline-flex items-center gap-2 text-blue-900 hover:text-blue-950 font-medium text-sm transition-colors">
-                            <span>Watch Video</span>
-                            <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
+                    <!-- Study cards will be loaded dynamically from data/study-data.json -->
+                    <div class="text-center text-gray-500 py-8">
+                        <i data-lucide="loader" class="w-8 h-8 mx-auto mb-2 animate-spin"></i>
+                        <p>Loading study materials...</p>
                     </div>
+                </div><div class="space-y-6">
 
 
-                    <div class="study-card bg-white rounded-xl p-6 border border-gray-100 shadow-sm" data-type="paper"
-                        data-tags="nlp,bert,transformers">
-                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
-                            <span>Jan 10, 2025</span>
-                            <span>•</span>
-                            <i data-lucide="clock" class="w-4 h-4"></i>
-                            <span>30 min read</span>
-                        </div>
-
-                        <div class="flex items-start gap-3 mb-3">
-                            <i data-lucide="file-text" class="w-6 h-6 text-blue-900 flex-shrink-0 mt-1"></i>
-                            <h3 class="text-xl font-bold text-gray-900">BERT: Pre-training of Deep Bidirectional
-                                Transformers</h3>
-                        </div>
-
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            Revolutionary approach to NLP pre-training using bidirectional transformers. Key concepts:
-                            masked language modeling (MLM), next sentence prediction (NSP), and fine-tuning strategies.
-                        </p>
-
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-xs">NLP</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">BERT</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Transformers</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Research Paper</span>
-                        </div>
-
-                        <a href="https://arxiv.org" target="_blank"
-                            class="inline-flex items-center gap-2 text-blue-900 hover:text-blue-950 font-medium text-sm transition-colors">
-                            <span>Read Paper</span>
-                            <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                    <div class="relative">
+                        <i data-lucide="search"
+                            class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="search-input" placeholder="Search..."
+                            class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent">
                     </div>
-
-
-                    <div class="study-card bg-white rounded-xl p-6 border border-gray-100 shadow-sm" data-type="youtube"
-                        data-tags="reinforcement-learning,ai">
-                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
-                            <span>Jan 5, 2025</span>
-                            <span>•</span>
-                            <i data-lucide="clock" class="w-4 h-4"></i>
-                            <span>60 min watch</span>
-                        </div>
-
-                        <div class="flex items-start gap-3 mb-3">
-                            <i data-lucide="youtube" class="w-6 h-6 text-red-600 flex-shrink-0 mt-1"></i>
-                            <h3 class="text-xl font-bold text-gray-900">Deep Reinforcement Learning Fundamentals</h3>
-                        </div>
-
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            Comprehensive introduction to RL concepts: Q-learning, policy gradients, actor-critic
-                            methods,
-                            and practical applications in game playing and robotics.
-                        </p>
-
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-xs">Reinforcement Learning</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">AI</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">YouTube</span>
-                        </div>
-
-                        <a href="https://youtube.com" target="_blank"
-                            class="inline-flex items-center gap-2 text-blue-900 hover:text-blue-950 font-medium text-sm transition-colors">
-                            <span>Watch Video</span>
-                            <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-
-
-                    <div class="study-card bg-white rounded-xl p-6 border border-gray-100 shadow-sm" data-type="paper"
-                        data-tags="computer-vision,cnn">
-                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
-                            <span>Dec 28, 2024</span>
-                            <span>•</span>
-                            <i data-lucide="clock" class="w-4 h-4"></i>
-                            <span>25 min read</span>
-                        </div>
-
-                        <div class="flex items-start gap-3 mb-3">
-                            <i data-lucide="file-text" class="w-6 h-6 text-blue-900 flex-shrink-0 mt-1"></i>
-                            <h3 class="text-xl font-bold text-gray-900">ResNet: Deep Residual Learning for Image
-                                Recognition</h3>
-                        </div>
-
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            Introduction of residual connections to solve vanishing gradient problem in very deep
-                            networks.
-                            Skip connections enable training of networks with 100+ layers.
-                        </p>
-
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-xs">Computer Vision</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">CNN</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">ResNet</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Research Paper</span>
-                        </div>
-
-                        <a href="https://arxiv.org" target="_blank"
-                            class="inline-flex items-center gap-2 text-blue-900 hover:text-blue-950 font-medium text-sm transition-colors">
-                            <span>Read Paper</span>
-                            <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-
-
-                    <div class="study-card bg-white rounded-xl p-6 border border-gray-100 shadow-sm" data-type="youtube"
-                        data-tags="nlp,gpt">
-                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
-                            <span>Dec 20, 2024</span>
-                            <span>•</span>
-                            <i data-lucide="clock" class="w-4 h-4"></i>
-                            <span>50 min watch</span>
-                        </div>
-
-                        <div class="flex items-start gap-3 mb-3">
-                            <i data-lucide="youtube" class="w-6 h-6 text-red-600 flex-shrink-0 mt-1"></i>
-                            <h3 class="text-xl font-bold text-gray-900">GPT Architecture and Language Modeling</h3>
-                        </div>
-
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            Understanding GPT's decoder-only architecture, autoregressive language modeling,
-                            and how pre-training on massive text corpora enables few-shot learning.
-                        </p>
-
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-xs">NLP</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">GPT</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Language Models</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">YouTube</span>
-                        </div>
-
-                        <a href="https://youtube.com" target="_blank"
-                            class="inline-flex items-center gap-2 text-blue-900 hover:text-blue-950 font-medium text-sm transition-colors">
-                            <span>Watch Video</span>
-                            <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-
-
-                    <div class="study-card bg-white rounded-xl p-6 border border-gray-100 shadow-sm" data-type="paper"
-                        data-tags="speech,audio,deep-learning">
-                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
-                            <span>Dec 15, 2024</span>
-                            <span>•</span>
-                            <i data-lucide="clock" class="w-4 h-4"></i>
-                            <span>35 min read</span>
-                        </div>
-
-                        <div class="flex items-start gap-3 mb-3">
-                            <i data-lucide="file-text" class="w-6 h-6 text-blue-900 flex-shrink-0 mt-1"></i>
-                            <h3 class="text-xl font-bold text-gray-900">WaveNet: A Generative Model for Raw Audio</h3>
-                        </div>
-
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            Deep generative model for audio synthesis using dilated causal convolutions.
-                            Achieves state-of-the-art results in text-to-speech and music generation.
-                        </p>
-
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-xs">Speech</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Audio</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Deep Learning</span>
-                            <span class="tag px-3 py-1 rounded-full text-xs">Research Paper</span>
-                        </div>
-
-                        <a href="https://arxiv.org" target="_blank"
-                            class="inline-flex items-center gap-2 text-blue-900 hover:text-blue-950 font-medium text-sm transition-colors">
-                            <span>Read Paper</span>
-                            <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-
                 </div>
 
 
-                <div class="space-y-6">
-
-
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
-                        <div class="relative">
-                            <i data-lucide="search"
-                                class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                            <input type="text" id="search-input" placeholder="Search..."
-                                class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent">
-                        </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 mb-4">Categories</h3>
+                    <div class="space-y-2">
+                        <button
+                            class="category-btn w-full text-left px-4 py-2 rounded-lg bg-blue-900 text-white font-medium"
+                            data-category="all">
+                            All
+                        </button>
+                        <button
+                            class="category-btn w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                            data-category="youtube">
+                            YouTube Videos
+                        </button>
+                        <button
+                            class="category-btn w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                            data-category="paper">
+                            Research Papers
+                        </button>
                     </div>
+                </div>
 
 
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
-                        <h3 class="font-semibold text-gray-900 mb-4">Categories</h3>
-                        <div class="space-y-2">
-                            <button
-                                class="category-btn w-full text-left px-4 py-2 rounded-lg bg-blue-900 text-white font-medium"
-                                data-category="all">
-                                All
-                            </button>
-                            <button
-                                class="category-btn w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
-                                data-category="youtube">
-                                YouTube Videos
-                            </button>
-                            <button
-                                class="category-btn w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
-                                data-category="paper">
-                                Research Papers
-                            </button>
-                        </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 mb-4">Popular Tags</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
+                            data-tag="ai">AI</button>
+                        <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
+                            data-tag="deep-learning">Deep Learning</button>
+                        <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
+                            data-tag="nlp">NLP</button>
+                        <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
+                            data-tag="transformers">Transformers</button>
+                        <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
+                            data-tag="computer-vision">Computer Vision</button>
+                        <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
+                            data-tag="reinforcement-learning">RL</button>
                     </div>
-
-
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
-                        <h3 class="font-semibold text-gray-900 mb-4">Popular Tags</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
-                                data-tag="ai">AI</button>
-                            <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
-                                data-tag="deep-learning">Deep Learning</button>
-                            <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
-                                data-tag="nlp">NLP</button>
-                            <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
-                                data-tag="transformers">Transformers</button>
-                            <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
-                                data-tag="computer-vision">Computer Vision</button>
-                            <button class="tag-filter tag px-3 py-1 rounded-full text-xs cursor-pointer"
-                                data-tag="reinforcement-learning">RL</button>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
+
+        </div>
         </div>
     </section>
 

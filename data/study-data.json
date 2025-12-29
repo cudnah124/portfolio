@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "youtube",
+    "title": "Attention Is All You Need Explained",
+    "description": "Deep dive into the Transformer architecture that revolutionized NLP. Covers self-attention mechanism, multi-head attention, positional encoding, and why transformers outperform RNNs.",
+    "date": "Jan 15, 2025",
+    "duration": "45 min watch",
+    "url": "https://youtube.com",
+    "tags": ["AI", "Deep Learning", "Transformers", "YouTube"]
+  },
+  {
+    "id": 2,
+    "type": "paper",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+    "description": "Revolutionary approach to NLP pre-training using bidirectional transformers. Key concepts: masked language modeling (MLM), next sentence prediction (NSP), and fine-tuning strategies.",
+    "date": "Jan 10, 2025",
+    "duration": "30 min read",
+    "url": "https://arxiv.org",
+    "tags": ["NLP", "BERT", "Transformers", "Research Paper"]
+  },
+  {
+    "id": 3,
+    "type": "youtube",
+    "title": "Deep Reinforcement Learning Fundamentals",
+    "description": "Comprehensive introduction to RL concepts: Q-learning, policy gradients, actor-critic methods, and practical applications in game playing and robotics.",
+    "date": "Jan 5, 2025",
+    "duration": "60 min watch",
+    "url": "https://youtube.com",
+    "tags": ["Reinforcement Learning", "AI", "YouTube"]
+  },
+  {
+    "id": 4,
+    "type": "paper",
+    "title": "ResNet: Deep Residual Learning for Image Recognition",
+    "description": "Introduction of residual connections to solve vanishing gradient problem in very deep networks. Skip connections enable training of networks with 100+ layers.",
+    "date": "Dec 28, 2024",
+    "duration": "25 min read",
+    "url": "https://arxiv.org",
+    "tags": ["Computer Vision", "CNN", "ResNet", "Research Paper"]
+  },
+  {
+    "id": 5,
+    "type": "youtube",
+    "title": "GPT Architecture and Language Modeling",
+    "description": "Understanding GPT's decoder-only architecture, autoregressive language modeling, and how pre-training on massive text corpora enables few-shot learning.",
+    "date": "Dec 20, 2024",
+    "duration": "50 min watch",
+    "url": "https://youtube.com",
+    "tags": ["NLP", "GPT", "Language Models", "YouTube"]
+  },
+  {
+    "id": 6,
+    "type": "paper",
+    "title": "WaveNet: A Generative Model for Raw Audio",
+    "description": "Deep generative model for audio synthesis using dilated causal convolutions. Achieves state-of-the-art results in text-to-speech and music generation.",
+    "date": "Dec 15, 2024",
+    "duration": "35 min read",
+    "url": "https://arxiv.org",
+    "tags": ["Speech", "Audio", "Deep Learning", "Research Paper"]
+  }
+]
