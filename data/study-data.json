@@ -58,5 +58,15 @@
     "duration": "35 min read",
     "url": "https://arxiv.org/abs/1609.03499",
     "tags": ["Speech", "Audio", "Deep Learning", "Research Paper"]
+  },
+  {
+    "id": 7,
+    "type": "youtube",
+    "title": "Reinforcement Learning Series: Overview of Methods",
+    "description": "Provides a high-level map of the Reinforcement Learning (RL) landscape, organizing a century of research into a clear framework. Model-Base vs Model Free, Q-Learning and Deep RL",
+    "date": "Dec 31, 2025",
+    "duration": "20 min watch",
+    "url": "https://www.youtube.com/watch?v=i7q8bISGwMQ",
+    "tags": ["Reinforcement Learning (RL)", "Theory", "Deep Reinforcement Learning", "Video"]
   }
 ]
