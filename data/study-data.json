@@ -68,5 +68,15 @@
     "duration": "20 min watch",
     "url": "https://www.youtube.com/watch?v=i7q8bISGwMQ",
     "tags": ["Reinforcement Learning (RL)", "Theory", "Deep Reinforcement Learning", "Video"]
+  },
+  {
+    "id": 8,
+    "type": "paper",
+    "title": "A Brief Introduction to Proximal Policy Optimization (PPO)",
+    "description": "An introductory guide to the PPO algorithm, explaining its Clipped Surrogate Objective, its stability improvements over TRPO, and its implementation in Actor-Critic architectures for Reinforcement Learning.",
+    "date": "May 22, 2024",
+    "duration": "12 min read",
+    "url": "https://www.geeksforgeeks.org/machine-learning/a-brief-introduction-to-proximal-policy-optimization/",
+    "tags": ["Reinforcement Learning", "Machine Learning", "PPO", "Policy Gradient", "OpenAI"]
   }
 ]
