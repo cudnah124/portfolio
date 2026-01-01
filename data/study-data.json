@@ -78,5 +78,15 @@
     "duration": "12 min read",
     "url": "https://www.geeksforgeeks.org/machine-learning/a-brief-introduction-to-proximal-policy-optimization/",
     "tags": ["Reinforcement Learning", "Machine Learning", "PPO", "Policy Gradient", "OpenAI"]
+  },
+  {
+    "id": 9,
+    "type": "paper",
+    "title": "Reinforcement Learning Book",
+    "description": "An Introductory for Reinforcement Learning.",
+    "date": "Jan 01, 2020",
+    "duration": "more than 1 hour",
+    "url": "http://incompleteideas.net/book/RLbook2020.pdf",
+    "tags": ["Reinforcement Learning", "Machine Learning", "PPO", "Policy Gradient", "OpenAI"]
   }
 ]
