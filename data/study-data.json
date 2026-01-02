@@ -88,5 +88,25 @@
     "duration": "Comprehensive Text",
     "url": "http://incompleteideas.net/book/RLbook2020.pdf",
     "tags": ["Reinforcement Learning", "Foundational Text", "Machine Learning"]
+  },
+  {
+    "id": 10,
+    "type": "youtube",
+    "title": "Reinforcement Learning: An Introduction (2nd Edition)",
+    "description": "The definitive textbook on RL by Richard Sutton and Andrew Barto. Covers MDPs, Dynamic Programming, Temporal-Difference Learning, and Eligibility Traces.",
+    "date": "Oct 2018",
+    "duration": "Comprehensive Text",
+    "url": "http://incompleteideas.net/book/RLbook2020.pdf",
+    "tags": ["Reinforcement Learning", "Foundational Text", "Machine Learning"]
+  },
+  {
+    "id": 11,
+    "type": "youtube",
+    "title": "Reinforcement Learning – Full Course / Introduction",
+    "description": "A comprehensive YouTube lecture introducing Reinforcement Learning concepts such as MDPs, policies, value functions, and learning algorithms.",
+    "date": "Unknown",
+    "duration": "YouTube Video",
+    "url": "https://youtu.be/NFo9v_yKQXA?si=2YFafRFjHlxjPbTj",
+    "tags": ["Reinforcement Learning", "YouTube Lecture", "Machine Learning"]
   }
 ]
