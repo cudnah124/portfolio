@@ -108,5 +108,15 @@
     "duration": "YouTube Video",
     "url": "https://youtu.be/NFo9v_yKQXA?si=2YFafRFjHlxjPbTj",
     "tags": ["Reinforcement Learning", "YouTube Lecture", "Machine Learning"]
+  },
+  {
+  "id": 12,
+  "type": "youtube",
+  "title": "Bellman Equations, Dynamic Programming, Generalized Policy Iteration | Reinforcement Learning Part 2",
+  "description": "Lecture on Bellman equations, dynamic programming methods, policy evaluation and improvement, and generalized policy iteration in reinforcement learning.",
+  "date": "Unknown",
+  "duration": "YouTube Video",
+  "url": "https://youtu.be/_j6pvGEchWU?si=Saq7XGacif1wFfrB",
+  "tags": ["Reinforcement Learning", "Bellman Equations", "Dynamic Programming", "Policy Iteration"]
   }
 ]
