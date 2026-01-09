@@ -1,90 +1,40 @@
 [
   {
-    "id": 1,
-    "type": "youtube",
-    "title": "Attention Is All You Need Explained",
-    "description": "A technical breakdown of the Transformer architecture by Richard Walker. Explains self-attention, Q/K/V matrices, and why this design solves the vanishing gradient and parallelization issues found in RNNs.",
-    "date": "Jan 31, 2023",
-    "duration": "14 min watch",
-    "url": "https://www.youtube.com/watch?v=sznZ78HquPc",
-    "tags": ["AI", "Deep Learning", "Transformers", "YouTube"]
-  },
-  {
-    "id": 2,
-    "type": "paper",
-    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-    "description": "The foundational paper introducing BERT. It uses bidirectional training for Transformers to achieve state-of-the-art results on NLP tasks via Masked Language Modeling (MLM) and Next Sentence Prediction (NSP).",
-    "date": "Oct 11, 2018",
-    "duration": "45 min read",
-    "url": "https://arxiv.org/pdf/1810.04805.pdf",
-    "tags": ["NLP", "BERT", "Transformers", "Research Paper"]
-  },
-  {
-    "id": 3,
-    "type": "youtube",
-    "title": "Fundamentals of Deep Reinforcement Learning for Learning Continually",
-    "description": "Professor Marlos Machado revisits Deep RL fundamentals, focusing on the challenges of continual learning, credit assignment, and how neural networks lose plasticity over time.",
-    "date": "Oct 18, 2024",
-    "duration": "69 min watch",
-    "url": "https://www.youtube.com/watch?v=DNkSa8A3bAs",
-    "tags": ["Reinforcement Learning", "Continual Learning", "AI", "YouTube"]
-  },
-  {
     "id": 4,
     "type": "paper",
     "title": "Deep Residual Learning for Image Recognition (ResNet)",
     "description": "Introduces Residual Networks (ResNet), which use skip connections to allow the training of extremely deep neural networks (152+ layers) while avoiding the vanishing gradient problem.",
-    "date": "Dec 10, 2015",
+    "date": "2015-12-10",
     "duration": "30 min read",
     "url": "https://arxiv.org/abs/1512.03385",
     "tags": ["Computer Vision", "CNN", "ResNet", "Research Paper"]
-  },
-  {
-    "id": 5,
-    "type": "youtube",
-    "title": "Inside GPT – Large Language Models Demystified",
-    "description": "Alan Smith explains the math behind GPT, covering tokenization, high-dimensional embeddings, and how parameters like temperature and Top-P influence the randomness of text generation.",
-    "date": "Aug 21, 2024",
-    "duration": "47 min watch",
-    "url": "https://www.youtube.com/watch?v=MznD2DzlQCc",
-    "tags": ["NLP", "GPT", "Language Models", "GOTO 2024"]
   },
   {
     "id": 6,
     "type": "paper",
     "title": "WaveNet: A Generative Model for Raw Audio",
     "description": "Introduces a deep generative model that operates directly on raw audio waveforms using dilated causal convolutions to produce highly natural-sounding speech and music.",
-    "date": "Sep 12, 2016",
+    "date": "2016-09-12",
     "duration": "35 min read",
     "url": "https://arxiv.org/abs/1609.03499",
     "tags": ["Speech", "Audio", "Deep Learning", "Research Paper"]
   },
   {
-    "id": 7,
-    "type": "youtube",
-    "title": "Reinforcement Learning Series: Overview of Methods",
-    "description": "Steve Brunton provides a clear map of the RL landscape, categorizing methods into model-based vs. model-free, and explaining the roles of policy and value functions.",
-    "date": "Jan 03, 2022",
-    "duration": "22 min watch",
-    "url": "https://www.youtube.com/watch?v=i7q8bISGwMQ",
-    "tags": ["Reinforcement Learning", "Control Theory", "Theory", "YouTube"]
-  },
-  {
-    "id": 8,
+    "id": 2,
     "type": "paper",
-    "title": "A Brief Introduction to Proximal Policy Optimization (PPO)",
-    "description": "A GeeksforGeeks guide to PPO, explaining the Clipped Surrogate Objective that makes PPO more stable and easier to tune than predecessor algorithms like TRPO.",
-    "date": "May 22, 2024",
-    "duration": "15 min read",
-    "url": "https://www.geeksforgeeks.org/machine-learning/a-brief-introduction-to-proximal-policy-optimization/",
-    "tags": ["Reinforcement Learning", "PPO", "Policy Gradient", "Machine Learning"]
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "description": "The foundational paper introducing BERT. It uses bidirectional training for Transformers to achieve state-of-the-art results on NLP tasks via Masked Language Modeling (MLM) and Next Sentence Prediction (NSP).",
+    "date": "2018-10-11",
+    "duration": "45 min read",
+    "url": "https://arxiv.org/pdf/1810.04805.pdf",
+    "tags": ["NLP", "BERT", "Transformers", "Research Paper"]
   },
   {
     "id": 9,
     "type": "paper",
     "title": "Reinforcement Learning: An Introduction (2nd Edition)",
     "description": "The definitive textbook on RL by Richard Sutton and Andrew Barto. Covers MDPs, Dynamic Programming, Temporal-Difference Learning, and Eligibility Traces.",
-    "date": "Oct 2018",
+    "date": "2018-10",
     "duration": "Comprehensive Text",
     "url": "http://incompleteideas.net/book/RLbook2020.pdf",
     "tags": ["Reinforcement Learning", "Foundational Text", "Machine Learning"]
@@ -93,11 +43,61 @@
     "id": 10,
     "type": "youtube",
     "title": "Reinforcement Learning: An Introduction (2nd Edition)",
-    "description": "The definitive textbook on RL by Richard Sutton and Andrew Barto. Covers MDPs, Dynamic Programming, Temporal-Difference Learning, and Eligibility Traces.",
-    "date": "Oct 2018",
-    "duration": "Comprehensive Text",
+    "description": "YouTube version / lecture content based on Sutton & Barto's textbook.",
+    "date": "2018-10",
+    "duration": "YouTube Video",
     "url": "http://incompleteideas.net/book/RLbook2020.pdf",
     "tags": ["Reinforcement Learning", "Foundational Text", "Machine Learning"]
+  },
+  {
+    "id": 7,
+    "type": "youtube",
+    "title": "Reinforcement Learning Series: Overview of Methods",
+    "description": "Steve Brunton provides a clear map of the RL landscape, categorizing methods into model-based vs. model-free, and explaining the roles of policy and value functions.",
+    "date": "2022-01-03",
+    "duration": "22 min watch",
+    "url": "https://www.youtube.com/watch?v=i7q8bISGwMQ",
+    "tags": ["Reinforcement Learning", "Control Theory", "Theory", "YouTube"]
+  },
+  {
+    "id": 1,
+    "type": "youtube",
+    "title": "Attention Is All You Need Explained",
+    "description": "A technical breakdown of the Transformer architecture by Richard Walker. Explains self-attention, Q/K/V matrices, and why this design solves the vanishing gradient and parallelization issues found in RNNs.",
+    "date": "2023-01-31",
+    "duration": "14 min watch",
+    "url": "https://www.youtube.com/watch?v=sznZ78HquPc",
+    "tags": ["AI", "Deep Learning", "Transformers", "YouTube"]
+  },
+  {
+    "id": 8,
+    "type": "paper",
+    "title": "A Brief Introduction to Proximal Policy Optimization (PPO)",
+    "description": "A GeeksforGeeks guide to PPO, explaining the Clipped Surrogate Objective that makes PPO more stable and easier to tune than predecessor algorithms like TRPO.",
+    "date": "2024-05-22",
+    "duration": "15 min read",
+    "url": "https://www.geeksforgeeks.org/machine-learning/a-brief-introduction-to-proximal-policy-optimization/",
+    "tags": ["Reinforcement Learning", "PPO", "Policy Gradient", "Machine Learning"]
+  },
+  {
+    "id": 5,
+    "type": "youtube",
+    "title": "Inside GPT – Large Language Models Demystified",
+    "description": "Alan Smith explains the math behind GPT, covering tokenization, high-dimensional embeddings, and how parameters like temperature and Top-P influence the randomness of text generation.",
+    "date": "2024-08-21",
+    "duration": "47 min watch",
+    "url": "https://www.youtube.com/watch?v=MznD2DzlQCc",
+    "tags": ["NLP", "GPT", "Language Models", "GOTO 2024"]
+  },
+  {
+    "id": 3,
+    "type": "youtube",
+    "title": "Fundamentals of Deep Reinforcement Learning for Learning Continually",
+    "description": "Professor Marlos Machado revisits Deep RL fundamentals, focusing on the challenges of continual learning, credit assignment, and how neural networks lose plasticity over time.",
+    "date": "2024-10-18",
+    "duration": "69 min watch",
+    "url": "https://www.youtube.com/watch?v=DNkSa8A3bAs",
+    "tags": ["Reinforcement Learning", "Continual Learning", "AI", "YouTube"]
   },
   {
     "id": 11,
@@ -106,18 +106,17 @@
     "description": "A comprehensive YouTube lecture introducing Reinforcement Learning concepts such as MDPs, policies, value functions, and learning algorithms.",
     "date": "Unknown",
     "duration": "YouTube Video",
-    "url": "https://youtu.be/NFo9v_yKQXA?si=2YFafRFjHlxjPbTj",
+    "url": "https://youtu.be/NFo9v_yKXA?si=2YFafRFjHlxjPbTj",
     "tags": ["Reinforcement Learning", "YouTube Lecture", "Machine Learning"]
   },
   {
-  "id": 12,
-  "type": "youtube",
-  "title": "Bellman Equations, Dynamic Programming, Generalized Policy Iteration | Reinforcement Learning Part 2",
-  "description": "Lecture on Bellman equations, dynamic programming methods, policy evaluation and improvement, and generalized policy iteration in reinforcement learning.",
-  "date": "Unknown",
-  "duration": "YouTube Video",
-  "url": "https://youtu.be/_j6pvGEchWU?si=Saq7XGacif1wFfrB",
-  "tags": ["Reinforcement Learning", "Bellman Equations", "Dynamic Programming", "Policy Iteration"]
-  },
-  
+    "id": 12,
+    "type": "youtube",
+    "title": "Bellman Equations, Dynamic Programming, Generalized Policy Iteration | Reinforcement Learning Part 2",
+    "description": "Lecture on Bellman equations, dynamic programming methods, policy evaluation and improvement, and generalized policy iteration in reinforcement learning.",
+    "date": "Unknown",
+    "duration": "YouTube Video",
+    "url": "https://youtu.be/_j6pvGEchWU?si=Saq7XGacif1wFfrB",
+    "tags": ["Reinforcement Learning", "Bellman Equations", "Dynamic Programming", "Policy Iteration"]
+  }
 ]
